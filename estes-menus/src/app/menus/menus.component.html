@@ -1,7 +1,7 @@
 <div class="recipes-main">
-    <h4>Pick a recipe</h4>
-    <mat-form-field>
-        <mat-label>Tasty Food</mat-label>
+    <h3>Recipes</h3>
+    <mat-form-field appearance="outline">
+        <mat-label>Select recipe...</mat-label>
         <mat-select [(ngModel)]="selectedValue">
             <mat-option *ngFor="let recipe of recipes"
                         [value]="recipe.value">
@@ -13,14 +13,15 @@
     <div *ngIf="selectedValue==='kebabs'">
         <h2 class="recipe-title">Mediterranean Chicken Kebabs</h2>
         <img src="../../assets/images/Mediterranean-Chicken-Kebabs-1-150x150.jpg">
-        <p class="recipe-description">Juicy and flavorful Grilled Mediterranean Chicken Kebabs marinated in olive oil, lemon juice, garlic, and spices make for a light, delicious and easy dinner.</p>
-        <h4 class="info">Prep Time: 40 min.</h4>
-        <h4 class="info">Cook Time: 10 min.</h4>
-        <h4 class="info">Total Time: 55 min.</h4>
-        <h4 class="info">Servings: 10 skewers</h4>
-        <h4 class="info">Calories: 228kcal</h4>
-        <h4 class="info">Author: Neli Howard | Delicious Meets Healthy</h4>
-        <h3>Ingredients</h3>
+        <p class="recipe-description">Juicy and flavorful Grilled Mediterranean Chicken Kebabs marinated in olive oil,
+            lemon juice, garlic, and spices make for a light, delicious and easy dinner.</p>
+        <h4 class="info">Prep Time: <span class="info-data">40 min.</span></h4>
+        <h4 class="info">Cook Time: <span class="info-data">10 min.</span></h4>
+        <h4 class="info">Total Time: <span class="info-data">55 min.</span></h4>
+        <h4 class="info">Servings: <span class="info-data">10 skewers</span></h4>
+        <h4 class="info">Calories: <span class="info-data">228kcal</span></h4>
+        <h4 class="info">Author: <span class="info-data">Neli Howard | Delicious Meets Healthy</span></h4>
+        <h3>Ingredients:</h3>
         <h4>Chicken Kebabs</h4>
         <ul>
             <li>3 chicken fillets, cut in 1-inch cubes</li>
@@ -40,22 +41,32 @@
             <li>4 tsp salt, divided</li>
             <li>2 tsp freshly ground black pepper, divided</li>
         </ul>
-        <h3>Instructions</h3>
+        <h3>Instructions:</h3>
         <h4>Marinade</h4>
         <ol>
-            <li>Mix 1/2 of all ingredients for the marinade in small bowl. Place chicken in a ziplock bag and pour marinade over it. Marinade in the fridge for at least 30 minutes.</li>
-            <li>Mix the other HALF of the ingredients in the same bowl pour into a ziplock bag with the vegetables. Marinade for at least 30 minutes.</li>
-            <li>If you are using wood skewers, while the chicken and veggies are marinating, soak the skewers in water for about 15 minutes. You need to soak wooden skewers in water for about 20- 30 minutes to keep them from igniting right there on the grill. I have also noticed that it's much easier to slide out the meat and veggies on your plate if the skewers have been soaked before grilling.</li>
+            <li>Mix 1/2 of all ingredients for the marinade in small bowl. Place chicken in a ziplock bag and pour
+                marinade over it. Marinade in the fridge for at least 30 minutes.</li>
+            <li>Mix the other HALF of the ingredients in the same bowl pour into a ziplock bag with the vegetables.
+                Marinade for at least 30 minutes.</li>
+            <li>If you are using wood skewers, while the chicken and veggies are marinating, soak the skewers in water
+                for about 15 minutes. You need to soak wooden skewers in water for about 20- 30 minutes to keep them
+                from igniting right there on the grill. I have also noticed that it's much easier to slide out the meat
+                and veggies on your plate if the skewers have been soaked before grilling.</li>
         </ol>
         <h4>Chicken Kebabs</h4>
         <ol>
-            <li>Thread the chicken and peppers and onions on the skewers. I usually place about 5-6 chicken pieces and a combo of peppers and onion in between.</li>
-            <li>Heat an outdoor grill or indoor grill pan over medium-high heat. Spray the grates lightly with oil and grill for about 5 minutes on each side, or until the center is no longer pink.</li>
-            <li>You can also bake this Mediterranean chicken skewers in the oven if you want to. Preheat the oven to 425 F. Place chicken skewers on roasting racks over two foil-lined baking sheets and bake for about 10-15 minutes, turn over once and bake for another 10 - 15 minutes on the other side, or until they are baked through.</li>
+            <li>Thread the chicken and peppers and onions on the skewers. I usually place about 5-6 chicken pieces and a
+                combo of peppers and onion in between.</li>
+            <li>Heat an outdoor grill or indoor grill pan over medium-high heat. Spray the grates lightly with oil and
+                grill for about 5 minutes on each side, or until the center is no longer pink.</li>
+            <li>You can also bake this Mediterranean chicken skewers in the oven if you want to. Preheat the oven to 425
+                F. Place chicken skewers on roasting racks over two foil-lined baking sheets and bake for about 10-15
+                minutes, turn over once and bake for another 10 - 15 minutes on the other side, or until they are baked
+                through.</li>
         </ol>
         <h3>Notes:</h3>
         <p>The nutrition label doesn't take into account that the marinade is discarded.</p>
-        <h3>Nutrition</h3>
+        <h3>Nutrition:</h3>
         <img src="../../assets/images/Annotation 2020-07-11 134958.png">
     </div>
 </div>
