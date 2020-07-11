@@ -11,6 +11,7 @@ export interface Recipe {
   styleUrls: ['./menus.component.scss']
 })
 export class MenusComponent implements OnInit {
+  selectedValue: string;
 
   recipes: Recipe[] = [
     { value: 'kebabs', viewValue: 'Mediterranean Chicken Kebabs' }

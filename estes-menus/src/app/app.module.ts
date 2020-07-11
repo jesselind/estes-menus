@@ -12,6 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -35,7 +36,8 @@ import { MenusComponent } from './menus/menus.component';
     MatToolbarModule,
     MatDividerModule,
     MatListModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
