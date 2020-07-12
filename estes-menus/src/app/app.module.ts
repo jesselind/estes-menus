@@ -13,17 +13,22 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MenusComponent } from './menus/menus.component';
+import { JrlRecipesComponent } from './jrl-recipes/jrl-recipes.component';
+import { AaRecipesComponent } from './aa-recipes/aa-recipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavigationComponent,
-    MenusComponent
+    MenusComponent,
+    JrlRecipesComponent,
+    AaRecipesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { MenusComponent } from './menus/menus.component';
     MatDividerModule,
     MatListModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

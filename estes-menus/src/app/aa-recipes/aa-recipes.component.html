@@ -1,0 +1,12 @@
+<div class="recipes-main">
+    <h3>Andrea's Favorite Recipes</h3>
+    <mat-form-field appearance="outline">
+        <mat-label>Select recipe...</mat-label>
+        <mat-select [(ngModel)]="selectedValue">
+            <mat-option *ngFor="let recipe of recipes"
+                        [value]="recipe.value">
+                {{recipe.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
