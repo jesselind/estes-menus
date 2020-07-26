@@ -6,15 +6,15 @@ export const ESTESRECIPES: Recipe[] = [
         title: 'Mediterranean Chicken Kebabs',
         img: '../../assets/images/Mediterranean-Chicken-Kebabs-1-full-size.jpg',
         desc: 'Juicy and flavorful Grilled Mediterranean Chicken Kebabs marinated in olive oil, lemon juice, garlic, and spices make for a light, delicious and easy dinner.',
-        timePrep: 40,
+        timePrep: '40',
         timePrepUnit: 'min.',
-        timeCook: 10,
+        timeCook: '10',
         timeCookUnit: 'min.',
-        timeTotal: 55,
+        timeTotal: '55',
         timeTotalUnit: 'min.',
         servings: '10',
         servingsUnit: 'skewers',
-        calories: 228,
+        calories: '228',
         caloriesUnit: 'kcal',
         author: 'Neli Howard',
         website: 'https://www.deliciousmeetshealthy.com/grilled-mediterranean-chicken-kebabs/',
@@ -122,6 +122,112 @@ export const ESTESRECIPES: Recipe[] = [
         nutrition: '../../assets/images/Annotation 2020-07-11 134958.png',
         takenFromWebsite: 'https://www.deliciousmeetshealthy.com/grilled-mediterranean-chicken-kebabs/',
         takenFromLabel: 'DeliciousMeetsHealthy.com'
+    },
+    {
+        id: 2,
+        title: 'Slow Cooker Chicken Chile Verde',
+        desc: 'If you’ve got 5 minutes + a slow cooker, you’re on your way to the easiest Chicken Chile Verde you’ll ever make (and love)! It hardly gets any easier than this recipe with just 5 ingredients! Look for a salsa verde without preservatives or added sugars – we like the Trader Joe’s Salsa Verde because it’s just tomatillos, green chiles, water, onions, jalapenos, salt, and spices. Serve over cauliflower rice or tucked into lettuce wraps.',
+        timePrep: '5',
+        timePrepUnit: 'min.',
+        timeCook: '5-6',
+        timeCookUnit: 'hours',
+        timeTotal: '6 hours 5 min.',
+        servings: '3-4',
+        servingsUnit: 'servings',
+        calories: '195',
+        caloriesUnit: 'calories',
+        author: 'Jessica Beacom',
+        website: 'https://therealfoodrds.com/slow-cooker-chicken-chile-verde/',
+        websiteDesc: 'The Real Food Dieticians',
+        ingredientsGroup: [
+            {
+                ingredientsIndividual: [
+                    {
+                        quantity: '24 oz. or 1.5 lb.',
+                        ingredient: 'chicken'
+                    },
+                    {
+                        quantity: '12',
+                        quantityUnit: 'oz. jar',
+                        ingredient: 'Trader Joe\'s Salsa Verde'
+                    },
+                    {
+                        quantity: '4',
+                        quantityUnit: 'oz. can',
+                        ingredient: 'fire roasted green chiles'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'cumin'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'oregano'
+                    },
+                    {
+                        ingredient: 'salt/pepper'
+                    },
+                    {
+                        ingredient: 'cilantro, lime, avocado--for serving'
+                    },
+                    {
+                        ingredient: 'veggies--peppers (2), onions (1-2 depending on size)',
+                    },
+                    {
+                        ingredient: 'rice (cauliflower rice or lettuce leaves may be substituted)'
+                    }
+                ]
+            }
+        ],
+        instructionsGroup: [
+            {
+                heading: 'Using Slow Cooker',
+                instructionsIndividual: [
+                    {
+                        step: 'Put chicken in slow cooker.'
+                    },
+                    {
+                        step: 'Combine salsa, green chiles, cumin, and oregano in small bowl. Pour mixture over chicken.'
+                    },
+                    {
+                        step: 'Cook on low heat for 4 – 6 hours in slow cooker (with lid on).'
+                    },
+                    {
+                        step: 'Remove lid; allow chicken to cool slightly before shredding it with (2 forks work well) in the slow cooker. Season with salt and pepper to taste.'
+                    },
+                    {
+                        step: 'Transfer to serving dish; top with fresh chopped cilantro and serve with lime wedges, if desired.'
+                    },
+                    {
+                        step: 'Serve over rice, cauliflower rice or in lettuce wraps.'
+                    }
+                ]
+            },
+            {
+                heading: 'Using Instant Pot',
+                instructionsIndividual: [
+                    {
+                        step: 'Place ingredients in the Instant Pot. After closing lid, ensure vent is sealed.'
+                    },
+                    {
+                        step: 'Choose \'Poultry setting on Instant Pot or set the cooking time for 15 minutes at high pressure.'
+                    },
+                    {
+                        step: 'When cook time is complete, allow natural releasing of pressure for 5 minutes, then safely vent.'
+                    },
+                    {
+                        step: 'Once pressure disappates and lid unlocks, remove chicken and shred chicken with two forks. Toss chicken back into the pot to coat with sauce (or carefully shred chicken in the pot, if preferred).'
+                    }
+                ]
+            }
+        ],
+        notes: [
+            'If preparing double, consider doubling all ingredients except for chicken.'
+        ],
+        takenFromWebsite: 'https://therealfoodrds.com/slow-cooker-chicken-chile-verde/',
+        takenFromLabel: 'The Real Food Dieticians'
     }
 ]
 
@@ -130,11 +236,11 @@ export const JRLRECIPES: Recipe[] = [
         id: 1,
         title: 'Blueberry Pancakes',
         img: '../../assets/images/blueberryPancakes.jpeg',
-        timePrep: 15,
+        timePrep: '15',
         timePrepUnit: 'min.',
-        timeCook: 15,
+        timeCook: '15',
         timeCookUnit: 'min.',
-        timeTotal: 30,
+        timeTotal: '30',
         timeTotalUnit: 'min.',
         servings: '4-6',
         servingsUnit: 'servings',
@@ -228,15 +334,15 @@ export const SJARECIPES: Recipe[] = [
         title: '(Easy Peasy) Keto Tiramisu-For-1 🥄 gluten free',
         img: '../../assets/images/Very-Easy-Gluten-Free-Low-Carb-Keto-TIramisu-For-One-by-Gnom-Gnom-9-1.jpg',
         desc: 'Extra luscious and easy-peasy, this gluten free and keto tiramisu for one (with its instant ‘cookie’ layer!) is bound to become a favorite low carb treat!',
-        timePrep: 15,
+        timePrep: '15',
         timePrepUnit: 'min.',
-        timeCook: 5,
+        timeCook: '5',
         timeCookUnit: 'min.',
-        timeTotal: 20,
+        timeTotal: '20',
         timeTotalUnit: 'min',
         servings: '2',
         servingsUnit: 'servings',
-        calories: 305,
+        calories: '305',
         caloriesUnit: 'kcal',
         author: 'Paola van der Hulst',
         website: 'https://www.gnom-gnom.com/easy-gluten-free-keto-tiramisu/',

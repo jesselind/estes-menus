@@ -1,17 +1,17 @@
 export interface Recipe {
     id: number;
     title: string;
-    img: string;
+    img?: string;
     desc?: string;
-    timePrep: number;
+    timePrep: string;
     timePrepUnit: string;
-    timeCook: number;
+    timeCook: string;
     timeCookUnit: string;
-    timeTotal: number;
-    timeTotalUnit: string;
+    timeTotal: string;
+    timeTotalUnit?: string;
     servings: string;
     servingsUnit: string;
-    calories?: number;
+    calories?: string;
     caloriesUnit?: string;
     author: string;
     website: string;

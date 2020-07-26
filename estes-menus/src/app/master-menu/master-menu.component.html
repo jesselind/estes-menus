@@ -2,8 +2,22 @@
     <div class="recipe"
          *ngIf="recipe">
         <h2 class="recipe-title">{{recipe.title}}</h2>
-        <img class="main-recipe-image"
-             src={{recipe.img}}>
+        <div class="flex-container">
+            <div *ngIf="recipe.img">
+                <img class="main-image"
+                     src={{recipe.img}}>
+            </div>
+            <div *ngIf="!recipe.img"
+                 class="no-image">
+                <h3>No Image Present</h3>
+                <h5 class="no-image-subtitle">Due to Copyright Reasons</h5>
+                <p class="no-image-subtext">
+                    Have a photo of this dish to submit?
+                    <br>
+                    Submit <a class="website"
+                       href="mailto: jesse.lind@gmail.com">here</a></p>
+            </div>
+        </div>
         <p class="recipe-description"
            *ngIf="recipe.desc">{{recipe.desc}}</p>
         <h4 class="info">Prep Time: <span class="info-data">{{recipe.timePrep}}
@@ -15,7 +29,7 @@
         <h4 class="info">Servings: <span class="info-data">{{recipe.servings}}
                 {{recipe.servingsUnit}}</span></h4>
         <h4 class="info"
-            *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}}{{recipe.caloriesUnit}}</span>
+            *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}} {{recipe.caloriesUnit}}</span>
         </h4>
         <h4 class="info">Author: <span class="info-author">{{recipe.author}} | <a class="website"
                    target="_blank"
@@ -42,9 +56,11 @@
         <p *ngFor="let note of recipe.notes">{{note}}</p>
         <h3 *ngIf="recipe.nutrition || recipe.nutritionNotes">Nutrition:</h3>
         <p *ngIf="recipe.nutritionNotes">{{recipe.nutritionNotes}}</p>
-        <img *ngIf="recipe.nutrition"
-             class="main-image"
-             src={{recipe.nutrition}}>
+        <div class="flex-container">
+            <img *ngIf="recipe.nutrition"
+                 class="nutrition-label"
+                 src={{recipe.nutrition}}>
+        </div>
         <p *ngIf="recipe.takenFromWebsite"><em>Taken from <a class="website"
                    target="_blank"
                    href={{recipe.takenFromWebsite}}>{{recipe.takenFromLabel}}</a></em>
