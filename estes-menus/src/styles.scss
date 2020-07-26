@@ -54,6 +54,7 @@ h4 {
 
 .recipes-main {
     margin-left: 1em;
+    margin-right: 0.5em;
 }
 
 .copyright {
@@ -97,3 +98,12 @@ h4 {
     background-color: #bbd8dc;
     color: white;
 }
+
+// @media screen (max-width: 800px) {
+//     .main-image {
+//         width: 100%;
+//     }
+//     @media screen (min-width: 801px) {
+//         width: 50%;
+//     }
+// }

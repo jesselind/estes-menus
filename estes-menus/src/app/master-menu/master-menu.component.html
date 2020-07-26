@@ -4,7 +4,8 @@
         <h2 class="recipe-title">{{recipe.title}}</h2>
         <img class="main-recipe-image"
              src={{recipe.img}}>
-        <p class="recipe-description" *ngIf="recipe.desc">{{recipe.desc}}</p>
+        <p class="recipe-description"
+           *ngIf="recipe.desc">{{recipe.desc}}</p>
         <h4 class="info">Prep Time: <span class="info-data">{{recipe.timePrep}}
                 {{recipe.timePrepUnit}}</span></h4>
         <h4 class="info">Cook Time: <span class="info-data">{{recipe.timeCook}}
@@ -13,7 +14,8 @@
                 {{recipe.timeTotalUnit}}</span></h4>
         <h4 class="info">Servings: <span class="info-data">{{recipe.servings}}
                 {{recipe.servingsUnit}}</span></h4>
-        <h4 class="info" *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}}{{recipe.caloriesUnit}}</span>
+        <h4 class="info"
+            *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}}{{recipe.caloriesUnit}}</span>
         </h4>
         <h4 class="info">Author: <span class="info-author">{{recipe.author}} | <a class="website"
                    target="_blank"
@@ -38,9 +40,11 @@
         </div>
         <h3 *ngIf="recipe.notes">Notes:</h3>
         <p *ngFor="let note of recipe.notes">{{note}}</p>
-        <h3 *ngIf="recipe.nutrition">Nutrition:</h3>
+        <h3 *ngIf="recipe.nutrition || recipe.nutritionNotes">Nutrition:</h3>
         <p *ngIf="recipe.nutritionNotes">{{recipe.nutritionNotes}}</p>
-        <img src={{recipe.nutrition}}>
+        <img *ngIf="recipe.nutrition"
+             class="main-image"
+             src={{recipe.nutrition}}>
         <p *ngIf="recipe.takenFromWebsite"><em>Taken from <a class="website"
                    target="_blank"
                    href={{recipe.takenFromWebsite}}>{{recipe.takenFromLabel}}</a></em>
