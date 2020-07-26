@@ -20,6 +20,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { MenusComponent } from './menus/menus.component';
 import { JrlRecipesComponent } from './jrl-recipes/jrl-recipes.component';
 import { AaRecipesComponent } from './aa-recipes/aa-recipes.component';
+import { MasterMenuComponent } from './master-menu/master-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AaRecipesComponent } from './aa-recipes/aa-recipes.component';
     NavigationComponent,
     MenusComponent,
     JrlRecipesComponent,
-    AaRecipesComponent
+    AaRecipesComponent,
+    MasterMenuComponent
   ],
   imports: [
     BrowserModule,

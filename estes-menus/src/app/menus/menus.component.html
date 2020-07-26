@@ -3,56 +3,11 @@
     <div>
         <ul class="recipes">
             <li *ngFor="let recipe of recipes"
+                [class.selected]="recipe === selectedRecipe"
                 (click)="onSelect(recipe)">
-                <span class="badge">{{recipe.id}}</span> {{recipe.title}}
+                {{recipe.title}}
             </li>
         </ul>
     </div>
-
-    <div class="recipe"
-         *ngIf="selectedRecipe">
-        <h2 class="recipe-title">{{selectedRecipe.title}}</h2>
-        <img class="main-recipe-image"
-             src={{selectedRecipe.img}}>
-        <p class="recipe-description">{{selectedRecipe.desc}}</p>
-        <h4 class="info">Prep Time: <span class="info-data">{{selectedRecipe.timePrep}}
-                {{selectedRecipe.timePrepUnit}}</span></h4>
-        <h4 class="info">Cook Time: <span class="info-data">{{selectedRecipe.timeCook}}
-                {{selectedRecipe.timeCookUnit}}</span></h4>
-        <h4 class="info">Total Time: <span class="info-data">{{selectedRecipe.timeTotal}}
-                {{selectedRecipe.timeTotalUnit}}</span></h4>
-        <h4 class="info">Servings: <span class="info-data">{{selectedRecipe.servings}}
-                {{selectedRecipe.servingsUnit}}</span></h4>
-        <h4 class="info">Calories: <span
-                  class="info-data">{{selectedRecipe.calories}}{{selectedRecipe.caloriesUnit}}</span></h4>
-        <h4 class="info">Author: <span class="info-data">{{selectedRecipe.author}} | <a class="website"
-                   target="_blank"
-                   href={{selectedRecipe.website}}>{{selectedRecipe.websiteDesc}}</a></span></h4>
-        <h3>Ingredients:</h3>
-        <div *ngFor="let group of selectedRecipe.ingredientsGroup">
-            <h4>{{group.heading}}</h4>
-            <ul>
-                <li *ngFor="let ingredient of group.ingredientsIndividual">
-                    {{ingredient.quantity}} {{ingredient.quantityUnit}} {{ingredient.ingredient}}
-                </li>
-            </ul>
-        </div>
-        <h3>Instructions:</h3>
-        <div *ngFor="let group of selectedRecipe.instructionsGroup">
-            <h4>{{group.heading}}</h4>
-            <ol>
-                <li *ngFor="let instruction of group.instructionsIndividual">
-                    {{instruction.step}}
-                </li>
-            </ol>
-        </div>
-        <h3>Notes:</h3>
-        <p *ngFor="let note of selectedRecipe.notes">{{selectedRecipe.notes}}</p>
-        <h3>Nutrition:</h3>
-        <img src={{selectedRecipe.nutrition}}>
-        <p><em>Taken from <a class="website"
-                   target="_blank"
-                   href={{selectedRecipe.takenFromWebsite}}>{{selectedRecipe.takenFromLabel}}</a></em>
-        </p>
-    </div>
+    <app-master-menu [recipe]="selectedRecipe"></app-master-menu>
 </div>

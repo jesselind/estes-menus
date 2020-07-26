@@ -1,0 +1,50 @@
+<div class="recipes-main">
+    <div class="recipe"
+         *ngIf="recipe">
+        <h2 class="recipe-title">{{recipe.title}}</h2>
+        <img class="main-recipe-image"
+             src={{recipe.img}}>
+        <p class="recipe-description" *ngIf="recipe.desc">{{recipe.desc}}</p>
+        <h4 class="info">Prep Time: <span class="info-data">{{recipe.timePrep}}
+                {{recipe.timePrepUnit}}</span></h4>
+        <h4 class="info">Cook Time: <span class="info-data">{{recipe.timeCook}}
+                {{recipe.timeCookUnit}}</span></h4>
+        <h4 class="info">Total Time: <span class="info-data">{{recipe.timeTotal}}
+                {{recipe.timeTotalUnit}}</span></h4>
+        <h4 class="info">Servings: <span class="info-data">{{recipe.servings}}
+                {{recipe.servingsUnit}}</span></h4>
+        <h4 class="info" *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}}{{recipe.caloriesUnit}}</span>
+        </h4>
+        <h4 class="info">Author: <span class="info-author">{{recipe.author}} | <a class="website"
+                   target="_blank"
+                   href={{recipe.website}}>{{recipe.websiteDesc}}</a></span></h4>
+        <h3>Ingredients:</h3>
+        <div *ngFor="let group of recipe.ingredientsGroup">
+            <h4>{{group.heading}}</h4>
+            <ul>
+                <li *ngFor="let ingredient of group.ingredientsIndividual">
+                    {{ingredient.quantity}} {{ingredient.quantityUnit}} {{ingredient.ingredient}}
+                </li>
+            </ul>
+        </div>
+        <h3>Instructions:</h3>
+        <div *ngFor="let group of recipe.instructionsGroup">
+            <h4>{{group.heading}}</h4>
+            <ol>
+                <li *ngFor="let instruction of group.instructionsIndividual">
+                    {{instruction.step}}
+                </li>
+            </ol>
+        </div>
+        <h3 *ngIf="recipe.notes">Notes:</h3>
+        <p *ngFor="let note of recipe.notes">{{recipe.notes}}</p>
+        <h3 *ngIf="recipe.nutrition">Nutrition:</h3>
+        <img src={{recipe.nutrition}}>
+        <p *ngIf="recipe.takenFromWebsite"><em>Taken from <a class="website"
+                   target="_blank"
+                   href={{recipe.takenFromWebsite}}>{{recipe.takenFromLabel}}</a></em>
+        </p>
+        <p *ngIf="!recipe.takenFromWebsite"><em>{{recipe.takenFromLabel}}</em>
+        </p>
+    </div>
+</div>

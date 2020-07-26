@@ -1,6 +1,6 @@
 import { Recipe } from './recipe';
 
-export const RECIPES: Recipe[] = [
+export const ESTESRECIPES: Recipe[] = [
     {
         id: 1,
         title: 'Mediterranean Chicken Kebabs',
@@ -12,7 +12,7 @@ export const RECIPES: Recipe[] = [
         timeCookUnit: 'min.',
         timeTotal: 55,
         timeTotalUnit: 'min.',
-        servings: 10,
+        servings: '10',
         servingsUnit: 'skewers',
         calories: 228,
         caloriesUnit: 'kcal',
@@ -122,5 +122,102 @@ export const RECIPES: Recipe[] = [
         nutrition: '../../assets/images/Annotation 2020-07-11 134958.png',
         takenFromWebsite: 'https://www.deliciousmeetshealthy.com/grilled-mediterranean-chicken-kebabs/',
         takenFromLabel: 'DeliciousMeetsHealthy.com'
+    }
+]
+
+export const JRLRECIPES: Recipe[] = [
+    {
+        id: 1,
+        title: 'Blueberry Pancakes',
+        img: '../../assets/images/blueberryPancakes.jpeg',
+        timePrep: 15,
+        timePrepUnit: 'min.',
+        timeCook: 15,
+        timeCookUnit: 'min.',
+        timeTotal: 30,
+        timeTotalUnit: 'min.',
+        servings: '4-6',
+        servingsUnit: 'servings',
+        author: 'Trisha Yearwood',
+        website: 'https://www.foodnetwork.com/recipes/trisha-yearwood/blueberry-pancakes-2120801',
+        websiteDesc: 'Food Network',
+        ingredientsGroup: [
+            {
+                ingredientsIndividual: [
+                    {
+                        quantity: '1 3/4',
+                        quantityUnit: 'cups',
+                        ingredient: 'all-purpose flour'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'sugar'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'baking powder'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'vanilla extract'
+                    },
+                    {
+                        quantity: '1 1/2',
+                        quantityUnit: 'cups',
+                        ingredient: 'fresh or frozen blueberries'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'baking soda'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'salt'
+                    },
+                    {
+                        quantity: '2',
+                        ingredient: 'large eggs'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'cup',
+                        ingredient: 'milk, plus more if needed'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'cup',
+                        ingredient: 'sour cream'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'stick',
+                        ingredient: 'butter, melted'
+                    },
+                    {
+                        quantity: '1/2',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'lemon zest'
+                    }
+                ]
+            }
+        ],
+        instructionsGroup: [
+            {
+                instructionsIndividual: [
+                    {
+                        step: 'Sift the flour, sugar, baking powder, baking soda and salt into a large mixing bowl. In a separate large bowl, lightly whisk the eggs. Add the milk, sour cream, half the melted butter and the vanilla, whisking to blend. Make a well in the dry ingredients and pour the egg mixture into it. Whisk the ingredients together just until blended. Fold the blueberries and lemon zest into the batter.'
+                    },
+                    {
+                        step: 'Heat a large skillet or griddle over medium heat and coat with some of the remaining melted butter. For each pancake, pour about 1/4 cup of the batter into the hot skillet. Cook 3 or 4 pancakes at a time, depending on the size of the skillet. If the batter seems too thick, thin it with 1 to 2 tablespoons milk. When bubbles begin to form and "pop" on the pancake\'s surface, after about 1 minute, and the outer edge looks done, flip it over and cook briefly for about 30 seconds on the other side.'
+                    }
+                ]
+            }
+        ],
+        takenFromLabel: 'Recipe adapted from Home Cooking with Trisha Yearwood (c) Clarkson Potter 2010'
     }
 ]
