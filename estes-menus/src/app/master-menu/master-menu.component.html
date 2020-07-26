@@ -37,8 +37,9 @@
             </ol>
         </div>
         <h3 *ngIf="recipe.notes">Notes:</h3>
-        <p *ngFor="let note of recipe.notes">{{recipe.notes}}</p>
+        <p *ngFor="let note of recipe.notes">{{note}}</p>
         <h3 *ngIf="recipe.nutrition">Nutrition:</h3>
+        <p *ngIf="recipe.nutritionNotes">{{recipe.nutritionNotes}}</p>
         <img src={{recipe.nutrition}}>
         <p *ngIf="recipe.takenFromWebsite"><em>Taken from <a class="website"
                    target="_blank"

@@ -221,3 +221,143 @@ export const JRLRECIPES: Recipe[] = [
         takenFromLabel: 'Recipe adapted from Home Cooking with Trisha Yearwood (c) Clarkson Potter 2010'
     }
 ]
+
+export const SJARECIPES: Recipe[] = [
+    {
+        id: 1,
+        title: '(Easy Peasy) Keto Tiramisu-For-1 🥄 gluten free',
+        img: '../../assets/images/Very-Easy-Gluten-Free-Low-Carb-Keto-TIramisu-For-One-by-Gnom-Gnom-9-1.jpg',
+        desc: 'Extra luscious and easy-peasy, this gluten free and keto tiramisu for one (with its instant ‘cookie’ layer!) is bound to become a favorite low carb treat!',
+        timePrep: 15,
+        timePrepUnit: 'min.',
+        timeCook: 5,
+        timeCookUnit: 'min.',
+        timeTotal: 20,
+        timeTotalUnit: 'min',
+        servings: '2',
+        servingsUnit: 'servings',
+        calories: 305,
+        caloriesUnit: 'kcal',
+        author: 'Paola van der Hulst',
+        website: 'https://www.gnom-gnom.com/easy-gluten-free-keto-tiramisu/',
+        websiteDesc: 'gnom-gnom',
+        ingredientsGroup: [
+            {
+                heading: 'For the Coffee Soaked Biscuit Base',
+                ingredientsIndividual: [
+                    {
+                        quantity: '25',
+                        quantityUnit: 'g',
+                        ingredient: 'almond flour'
+                    },
+                    {
+                        quantity: '1-3',
+                        quantityUnit: 'teaspoons',
+                        ingredient: 'powdered erythritol or allulose and xylitol*'
+                    },
+                    {
+                        quantityUnit: 'pinch',
+                        ingredient: 'cinnamon',
+                    },
+                    {
+                        quantityUnit: 'pinch',
+                        ingredient: 'kosher salt'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'teaspoons',
+                        ingredient: 'melted unsalted grass-fed butter'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'espresso or strong-brewed coffee'
+                    }
+                ]
+            },
+            {
+                heading: 'For the Keto Tiramasu',
+                ingredientsIndividual: [
+                    {
+                        quantity: '1',
+                        ingredient: 'large egg yolk'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'tablespoon',
+                        ingredient: 'dry Marsala wine or dry white wine'
+                    },
+                    {
+                        quantity: '2-3',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'powdered erythritol or xylitol, to taste (we use 2)*'
+                    },
+                    {
+                        quantity: '70',
+                        quantityUnit: 'g',
+                        ingredient: 'mascarpone cheese at room temperature'
+                    },
+                    {
+                        quantity: '40',
+                        quantityUnit: 'g',
+                        ingredient: 'heavy cream whipped'
+                    },
+                    {
+                        ingredient: 'cocoa powder for dusting'
+                    }
+                ]
+            }
+        ],
+        instructionsGroup: [
+            {
+                heading: 'For the Coffee Soaked Biscuit Base',
+                instructionsIndividual: [
+                    {
+                        step: 'Lightly toast almond flour in a dry skillet or pan over medium heat, until fully golden and fragrant (2-4 minutes). This is very important taste-wise, so don\'t skip!'
+                    },
+                    {
+                        step: 'Transfer toasted almond flour to a small bowl (or go straight for the serving glass), and mix in Swerve, cinnamon and salt. Add in butter and coffee, mix until thoroughly combined, and sprinkle into serving glass or dish. Refrigerate while you make the tiramisu (and don\'t worry if it tastes soggy right now!).'
+                    }
+                ]
+            },
+            {
+                heading: 'For the Keto Tiramasu (the easy version)',
+                instructionsIndividual: [
+                    {
+                        step: 'Add heavy cream to a medium bowl and beat with an electric mixer until whipped (2-3 minutes). Set aside.'
+                    },
+                    {
+                        step: 'Fold in mascarpone, marsala (optional), and powdered sweetener to taste.'
+                    },
+                    {
+                        step: 'Transfer to prepared serving glass and freeze for 30-40 minutes or refrigerate for a couple hours (or overnight). Serve with a generous dusting of cocoa powder.'
+                    }
+                ]
+            },
+            {
+                heading: 'For the Keto Tiramasu (the Zabaglione version)',
+                instructionsIndividual: [
+                    {
+                        step: 'Add heavy cream to a medium bowl and beat with an electric mixer until whipped (2-3 minutes). Set aside.'
+                    },
+                    {
+                        step: 'Beat egg yolk, marsala and powdered sweetener in a heat-proof bowl set over a simmering water bath. Making sure the bottom doesn\'t touch the water. Whisk rapidly and constantly (much easier with an electric mixer or handheld whisk), until tripled in volume, 4-6 minutes.'
+                    },
+                    {
+                        step: 'Remove from heat and fold in mascarpone until thoroughly combined.'
+                    },
+                    {
+                        step: 'Fold in whipped cream gently until creamy smooth, transfer to prepared serving glass and freeze for 30-40 minutes or refrigerate for a couple hours (or overnight). Serve with a generous dusting of cocoa powder.'
+                    }
+                ]
+            }
+        ],
+        notes: [
+            '*If using xylitol, make sure to be careful if you have a pup around the house, as it’s highly toxic to the little guys! 🐕'
+        ],
+        nutritionNotes: 'Each batch of our keto tiramisu-for-1 yields a full-sized (very large!) serving. So I prefer to portion it into two servings, rather than indulge all at once (2.5g net carbs rather than 5g net). But feel free to portion it even smaller (think tiramisu fat bombs!) in small muffin pans or moulds. Keep in the fridge for up to 4 days, and in the freezer afterwards.',
+        nutrition: '../../assets/images/keto-tiramasu-nutrition.png',
+        takenFromWebsite: 'https://www.gnom-gnom.com/easy-gluten-free-keto-tiramisu/',
+        takenFromLabel: 'gnom-gnom.com'
+    }
+]

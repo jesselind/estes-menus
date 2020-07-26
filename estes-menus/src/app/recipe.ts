@@ -19,6 +19,7 @@ export interface Recipe {
     ingredientsGroup: IngredientsGroup[];
     instructionsGroup: InstructionsGroup[];
     notes?: string[];
+    nutritionNotes?: string;
     nutrition?: string;
     takenFromWebsite?: string;
     takenFromLabel?: string;

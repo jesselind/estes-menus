@@ -70,7 +70,7 @@ h4 {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: 20em;
+    width: 12em;
 }
 .recipes li {
     cursor: pointer;
@@ -78,10 +78,11 @@ h4 {
     left: 0;
     background-color: rgba(30, 44, 85, 0.2);
     margin: 0.5em;
-    height: 3em;
-    line-height: 3em;
+    height: auto;
+    padding: 1em;
     border-radius: 0px;
     text-align: center;
+    word-wrap: normal;
 }
 .recipes li:hover {
     color: #607d8b;
