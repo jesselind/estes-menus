@@ -228,6 +228,132 @@ export const ESTESRECIPES: Recipe[] = [
         ],
         takenFromWebsite: 'https://therealfoodrds.com/slow-cooker-chicken-chile-verde/',
         takenFromLabel: 'The Real Food Dieticians'
+    },
+    {
+        id: 3,
+        title: 'Italian Salad',
+        img: '../../assets/images/Italian_Salad.png',
+        desc: 'A healthy and simple Italian Couscous Salad that everyone will go crazy for!',
+        timePrep: '25',
+        timePrepUnit: 'min.',
+        timeTotal: '25',
+        timeTotalUnit: 'min.',
+        servings: '6',
+        servingsUnit: 'meal prep servings',
+        calories: '547',
+        caloriesUnit: 'kcal',
+        author: 'Chelsea',
+        website: 'https://www.chelseasmessyapron.com/italian-salad/',
+        websiteDesc: 'Chelsea\'s Messy Apron',
+        ingredientsGroup: [
+            {
+                heading: 'Salad (doubled from original recipe)',
+                ingredientsIndividual: [
+                    {
+                        ingredient: 'couscous (or another grain, such as farro or rice)'
+                    },
+                    {
+                        quantity: '10',
+                        quantityUnit: 'oz.',
+                        ingredient: 'salami'
+                    },
+                    {
+                        ingredient: 'cheese'
+                    },
+                    {
+                        quantity: '2',
+                        ingredient: 'green bell peppers'
+                    },
+                    {
+                        quantity: '10',
+                        quantityUnit: 'oz',
+                        ingredient: 'black olives'
+                    },
+                    {
+                        quantity: '4',
+                        quantityUnit: 'cups',
+                        ingredient: 'cherry tomatoes'
+                    },
+                    {
+                        quantity: '1 1/2',
+                        quantityUnit: 'cups',
+                        ingredient: 'basil'
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'cup',
+                        ingredient: 'red beans'
+                    }
+                ]
+            },
+            {
+                heading: 'Dressing (tripled from original recipe)',
+                ingredientsIndividual: [
+                    {
+                        quantity: '1',
+                        quantityUnit: 'cup',
+                        ingredient: 'olive oil',
+                    },
+                    {
+                        quantity: '1',
+                        quantityUnit: 'cup',
+                        ingredient: 'red wine vinegar'
+                    },
+                    {
+                        quantity: '3',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'Dijon mustard'
+                    },
+                    {
+                        quantity: '3',
+                        quantityUnit: 'teaspoons',
+                        ingredient: 'honey'
+                    },
+                    {
+                        quantity: '3',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'minced garlic'
+                    },
+                    {
+                        quantity: '1 1/2',
+                        quantityUnit: 'teaspoons EACH',
+                        ingredient: 'dried basil, dried parsley, dried oregano'
+                    },
+                    {
+                        quantity: '1/4',
+                        quantityUnit: 'teaspoon',
+                        ingredient: 'red pepper flakes, optional'
+                    },
+                    {
+                        ingredient: 'salt, pepper'
+                    }
+                ]
+            }
+        ],
+        instructionsGroup: [
+            {
+                instructionsIndividual: [
+                    {
+                        step: 'Prepare the couscous mix according to package instructions making sure to add in the seasoning mix. If you don\'t use couscous from a package, you\'ll want to add a few teaspoons of your favorite seasonings (salt, pepper, Italian seasonings, garlic powder, etc.) to taste.'
+                    },
+                    {
+                        step: 'While the couscous is cooking, prep the rest of the salad: drain the chickpeas (roast if desired; see last paragraph in blogpost), coarsely chop the salami, cut the mozzarella into small bite-sized pieces, slice the pepper into strips and then cut those strips in half or thirds, slice or halve the olives, and slice or halve the cherry tomatoes. Chiffonade the basil (stack basil leaves, roll them tightly, and then slice the leaves perpendicular to the roll.)'
+                    },
+                    {
+                        step: 'Place Dressing ingredients in a jar and shake well. Add salt and pepper to taste (I like to add about 3/4 teaspoon salt and 1/2 teaspoon pepper, but add to personal preference). '
+                    },
+                    {
+                        step: 'TO SERVE AS A SALAD: Add the prepared couscous to a large bowl and allow to cool. Add in all of the veggies, salami, basil, and chickpeas. Add some freshly squeezed lemon, salt and pepper to taste, and the dressing. Only dress what you will enjoy as this salad doesn\'t sit well for a long time with the dressing on it.'
+                    },
+                    {
+                        step: 'TO MEAL PREP: Divide the dressing evenly into 6 small containers. Divide the couscous evenly among 6 meal prep containers. Next add in equal parts of all of the chopped veggies, salami, basil, and chickpeas. Add a lemon wedge and a pinch of some salt and pepper on top of each container. To enjoy, add the dressing, squeeze the lemon over everything, stir together, and eat!'
+                    }
+                ]
+            }
+        ],
+        nutrition: '../../assets/images/Italian_Salad_nutrition.png',
+        takenFromWebsite: 'https://www.chelseasmessyapron.com/italian-salad/',
+        takenFromLabel: 'Chelsea\'s Messy Apron'
     }
 ]
 
