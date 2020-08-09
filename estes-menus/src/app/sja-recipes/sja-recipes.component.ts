@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SJARECIPES } from '../mock-data';
 import { Recipe } from '../recipe';
+import { RECIPES } from '../mock-data2';
 
 @Component({
   selector: 'app-sja-recipes',
@@ -8,7 +9,8 @@ import { Recipe } from '../recipe';
   styleUrls: ['./sja-recipes.component.scss']
 })
 export class SjaRecipesComponent implements OnInit {
-  recipes = SJARECIPES;
+  // recipes = SJARECIPES;
+  recipes = RECIPES;
   selectedRecipe: Recipe;
 
   constructor() { }

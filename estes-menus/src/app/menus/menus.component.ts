@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ESTESRECIPES } from '../mock-data';
 import { Recipe } from '../recipe';
+import { RECIPES } from '../mock-data2';
 
 @Component({
   selector: 'app-menus',
@@ -9,9 +10,10 @@ import { Recipe } from '../recipe';
 })
 
 export class MenusComponent implements OnInit {
-  recipes = ESTESRECIPES;
+  // recipes = ESTESRECIPES;
+  recipes = RECIPES;
   selectedRecipe: Recipe;
-  
+
   constructor() { }
 
   ngOnInit() {

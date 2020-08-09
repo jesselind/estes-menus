@@ -1,13 +1,14 @@
 <div class="recipes-main">
     <h3>Sam & Jess's Favorite Recipes</h3>
-    <div>
-        <ul class="recipes">
-            <li *ngFor="let recipe of recipes"
-                [class.selected]="recipe === selectedRecipe"
-                (click)="onSelect(recipe)">
-                {{recipe.title}}
-            </li>
-        </ul>
-    </div>
+    <ul class="recipes">
+        <ng-container *ngFor="let recipe of recipes">
+            <ng-container *ngIf="recipe.group === 'SJA'">
+                <li [class.selected]="recipe === selectedRecipe"
+                    (click)="onSelect(recipe)">
+                    {{recipe.title}}
+                </li>
+            </ng-container>
+        </ng-container>
+    </ul>
     <app-master-menu [recipe]="selectedRecipe"></app-master-menu>
 </div>
