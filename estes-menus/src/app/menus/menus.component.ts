@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ESTESRECIPES } from '../mock-data';
-import { Recipe } from '../recipe';
-import { RECIPES } from '../mock-data2';
+// import { ESTESRECIPES } from '../mock-data';
+// import { Recipe } from '../recipe';
+// import { RECIPES } from '../mock-data2';
 
 @Component({
   selector: 'app-menus',
@@ -11,16 +11,16 @@ import { RECIPES } from '../mock-data2';
 
 export class MenusComponent implements OnInit {
   // recipes = ESTESRECIPES;
-  recipes = RECIPES;
-  selectedRecipe: Recipe;
+  // recipes = RECIPES;
+  // selectedRecipe: Recipe;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  public onSelect(recipe: Recipe): void {
-    this.selectedRecipe = recipe;
-  }
+  // public onSelect(recipe: Recipe): void {
+  //   this.selectedRecipe = recipe;
+  // }
 
 }

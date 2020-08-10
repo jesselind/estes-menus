@@ -13,6 +13,6 @@ export class MasterMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  }  
 
 }
