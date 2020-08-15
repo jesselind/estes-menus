@@ -23,6 +23,7 @@ import { AaRecipesComponent } from './aa-recipes/aa-recipes.component';
 import { MasterMenuComponent } from './master-menu/master-menu.component';
 import { SjaRecipesComponent } from './sja-recipes/sja-recipes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AllRecipesComponent } from './all-recipes/all-recipes.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AaRecipesComponent,
     MasterMenuComponent,
     SjaRecipesComponent,
-    DashboardComponent
+    DashboardComponent,
+    AllRecipesComponent
   ],
   imports: [
     BrowserModule,
