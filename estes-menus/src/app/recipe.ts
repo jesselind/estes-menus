@@ -3,6 +3,7 @@ export interface Recipe {
     group?: string;
     title: string;
     img?: string;
+    imgAlt?: string;
     desc?: string;
     timePrep?: string;
     timePrepUnit?: string;

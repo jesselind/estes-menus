@@ -5,17 +5,17 @@
         <div class="flex-container">
             <div *ngIf="recipe.img">
                 <img class="main-image"
-                     src={{recipe.img}}>
+                     src={{recipe.img}} alt="{{recipe.imgAlt}}">
             </div>
             <div *ngIf="!recipe.img"
                  class="no-image">
-                <h3>No Image Present</h3>
-                <h5 class="no-image-subtitle">Due to Copyright Reasons</h5>
+                <p class="no-image-title">No Image Present</p>
+                <p class="no-image-subtitle">Due to Copyright Reasons</p>
                 <p class="no-image-subtext">
                     Have a photo of this dish to submit?
                     <br>
-                    Submit <a class="website"
-                       href="mailto: jesse.lind@gmail.com">here</a></p>
+                    Click <a class="website"
+                       href="mailto: jesse.lind@gmail.com?subject=Missing recipe photo">here</a></p>
             </div>
         </div>
         <p class="recipe-description"
