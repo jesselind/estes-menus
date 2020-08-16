@@ -11,13 +11,13 @@ export interface Recipe {
     timeCookUnit?: string;
     timeTotal?: string;
     timeTotalUnit?: string;
-    servings: string;
-    servingsUnit: string;
+    servings?: string;
+    servingsUnit?: string;
     calories?: string;
     caloriesUnit?: string;
     author?: string;
-    website: string;
-    websiteDesc: string;
+    website?: string;
+    websiteDesc?: string;
     ingredientsGroup: IngredientsGroup[];
     instructionsGroup: InstructionsGroup[];
     notes?: string[];

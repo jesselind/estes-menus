@@ -5,12 +5,13 @@
         <div class="flex-container">
             <div *ngIf="recipe.img">
                 <img class="main-image"
-                     src={{recipe.img}} alt="{{recipe.imgAlt}}">
+                     src={{recipe.img}}
+                     alt="{{recipe.imgAlt}}">
             </div>
             <div *ngIf="!recipe.img"
                  class="no-image">
                 <p class="no-image-title">No Image Present</p>
-                <p class="no-image-subtitle">Due to Copyright Reasons</p>
+                <!-- <p class="no-image-subtitle">Due to Copyright Reasons</p> -->
                 <p class="no-image-subtext">
                     Have a photo of this dish to submit?
                     <br>
@@ -20,18 +21,23 @@
         </div>
         <p class="recipe-description"
            *ngIf="recipe.desc">{{recipe.desc}}</p>
-        <h4 class="info">Prep Time: <span class="info-data">{{recipe.timePrep}}
+        <h4 *ngIf="recipe.timePrep && recipe.timePrepUnit"
+            class="info">Prep Time: <span class="info-data">{{recipe.timePrep}}
                 {{recipe.timePrepUnit}}</span></h4>
-        <h4 class="info">Cook Time: <span class="info-data">{{recipe.timeCook}}
+        <h4 *ngIf="recipe.timeCook && recipe.timeCookUnit"
+            class="info">Cook Time: <span class="info-data">{{recipe.timeCook}}
                 {{recipe.timeCookUnit}}</span></h4>
-        <h4 class="info">Total Time: <span class="info-data">{{recipe.timeTotal}}
+        <h4 *ngIf="recipe.timeTotal && recipe.timeTotalUnit"
+            class="info">Total Time: <span class="info-data">{{recipe.timeTotal}}
                 {{recipe.timeTotalUnit}}</span></h4>
-        <h4 class="info">Servings: <span class="info-data">{{recipe.servings}}
+        <h4 *ngIf="recipe.servings && recipe.servingsUnit"
+            class="info">Servings: <span class="info-data">{{recipe.servings}}
                 {{recipe.servingsUnit}}</span></h4>
         <h4 class="info"
             *ngIf="recipe.calories">Calories: <span class="info-data">{{recipe.calories}} {{recipe.caloriesUnit}}</span>
         </h4>
-        <h4 class="info">Author: <span class="info-author">{{recipe.author}} | <a class="website"
+        <h4 *ngIf="recipe.author"
+            class="info">Author: <span class="info-author">{{recipe.author}} | <a class="website"
                    target="_blank"
                    href={{recipe.website}}>{{recipe.websiteDesc}}</a></span></h4>
         <h3>Ingredients:</h3>

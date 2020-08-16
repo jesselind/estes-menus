@@ -1,5 +1,4 @@
 import { Recipe } from './recipe';
-import { JRLRECIPES } from './mock-data';
 
 export const RECIPES: Recipe[] = [
     {
@@ -759,5 +758,108 @@ export const RECIPES: Recipe[] = [
         nutrition: '../../assets/images/Grilled_Fajita_Kebabs_Nutrition.png',
         takenFromWebsite: 'https://www.evolvingtable.com/grilled-fajita-chicken-kabobs/',
         takenFromLabel: 'Evolving Table'
+    },
+    {
+        group: 'ESTES2020',
+        title: 'BBQ Chicken & Sweet Potato Fries',
+        desc: 'Simple BBQ Chicken on the grill with homemade BBQ sauce and handmade sweet potato fries',
+        timePrep: '30+',
+        timePrepUnit: 'min.',
+        ingredientsGroup: [
+            {
+                ingredientsIndividual: [
+                    {
+                        ingredient: 'chicken'
+                    },
+                    {
+                        ingredient: 'sweet potatoes'
+                    },
+                    {
+                        ingredient: 'high-heat oil (avocado oil, safflower oil, etc.)'
+                    },
+                    {
+                        ingredient: 'salt'
+                    },
+                    {
+                        ingredient: 'garlic powder'
+                    }
+                ]
+            },
+            {
+                heading: 'BBQ Sauce',
+                ingredientsIndividual: [
+                    {
+                        quantity: '6',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'ketchup'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'red wine vinegar'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'worcestershire sauce'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'tablespoons',
+                        ingredient: 'cocount sugar'
+                    },
+                    {
+                        quantity: '2',
+                        quantityUnit: 'teaspoons',
+                        ingredient: 'mustard'
+                    }
+                ]
+            }
+        ],
+        instructionsGroup: [
+            {
+                heading: 'Chicken and BBQ sauce',
+                instructionsIndividual: [
+                    {
+                        step: 'Mix ingredients for BBQ sauce (makes approx. 3/4 cup)'
+                    },
+                    {
+                        step: 'Marinade chicken for at least 30 minutes'
+                    },
+                    {
+                        step: 'Cook chicken over grill, ensuring internal temperature reaches minimum food safety standards'
+                    }
+                ]
+            },
+            {
+                heading: 'Sweet Potato Fries',
+                instructionsIndividual: [
+                    {
+                        step: 'Preheat oven to low broil'
+                    },
+                    {
+                        step: 'Slice sweet potatoes into desired fry thickness and legnth'
+                    },
+                    {
+                        step: 'Heavily oil a baking sheet and place fries on sheet'
+                    },
+                    {
+                        step: 'cover top of fries with oil using basting brush or aerosolized oil (Chosen Foods makes their avocado oil available in a spray can, in addition to a standard pour container)'
+                    },
+                    {
+                        step: 'Season frieds with salt, garlic powder, and any other desired seasonings/spices'
+                    },
+                    {
+                        step: 'Broil fries 10-12 each side;,carefully observing to avoid charring the potatoes; re-season fries at halfway point, once flipped, if desired'
+                    },
+                    {
+                        step: 'The goal is fries that are crunchy but not burned; less oil will result in crunchier fries while more oil will prevent scorching but may result in soggier fries'
+                    }
+                ]
+            }
+        ],
+        notes: [
+            'Consider adding a caesar salad to complete the meal.'
+        ]
     }
 ]
