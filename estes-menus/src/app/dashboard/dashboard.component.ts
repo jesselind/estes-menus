@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from '../recipe';
-import { RECIPES } from '../mock-data2';
+import { RecipeService } from '../recipes.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,16 +10,22 @@ import { RECIPES } from '../mock-data2';
 export class DashboardComponent implements OnInit {
   @Input() group: string;
 
-  recipes = RECIPES;
+  recipes: Recipe[];
   selectedRecipe: Recipe;
 
-  constructor() { }
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
+    this.getRecipes();
   }
 
   public onSelect(recipe: Recipe): void {
     this.selectedRecipe = recipe;
+  }
+
+  getRecipes(): void {
+    this.recipeService.getRecipes()
+      .subscribe(recipes => this.recipes = recipes);
   }
 
 }
